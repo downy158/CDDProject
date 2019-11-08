@@ -7,7 +7,18 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prestorybook": "rnstl"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src",
+        "./packages"
+      ],
+      "pattern": "**/*.stories.*",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   },
   "dependencies": {
     "react": "16.9.0",
@@ -27,6 +38,7 @@
     "jest": "24.9.0",
     "metro-react-native-babel-preset": "0.57.0",
     "react-dom": "16.9.0",
+    "react-native-storybook-loader": "1.8.1",
     "react-test-renderer": "16.9.0"
   },
   "jest": {
